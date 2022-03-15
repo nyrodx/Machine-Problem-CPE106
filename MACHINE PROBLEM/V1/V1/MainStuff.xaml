@@ -1,0 +1,63 @@
+﻿<Window x:Class="V1.MainStuff"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V1"
+        mc:Ignorable="d"
+        Title="MainStuff" Height="519" Width="800" WindowStartupLocation="CenterScreen" Closed="mainstuff_Close" WindowState="Normal">
+    <Grid>
+        <DataGrid/>
+        <DataGrid x:Name="students_grid" Margin="145,0,0,0"/>
+        <ScrollViewer HorizontalAlignment="Left" Width="145" VerticalAlignment="Top" VerticalScrollBarVisibility="Hidden">
+            <StackPanel ScrollViewer.HorizontalScrollBarVisibility="Visible" Visibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" Width="145" >
+                <StackPanel x:Name="panel_DataLoading" Height="46" Width="145">
+                    <Button x:Name="btn_LoadSQL" Content="Load from SQL" Height="23" Click="btn_LoadSQL_Click"/>
+                    <Button x:Name="btn_LoadExcel" Content="Load from Excel" Height="23                     " Click="btn_LoadExcel_Click"/>
+                </StackPanel>
+
+                <Button x:Name="btn_ShowSymptoms" Content="Show Symptoms" Click="btn_ShowSymptoms_Click" Height="46" Width="145"/>
+                <StackPanel x:Name="subpanel_symptoms" Width="143" Height="212">
+                    <CheckBox x:Name="cb_" Content="Congestion/Runny &#xD;&#xA;Nose" Height="31"/>
+                    <CheckBox x:Name="cb_Diarrhea" Content="Diarrhea" Height="19"/>
+                    <CheckBox x:Name="cb_Fatigue" Content="Fatigue" Height="19"/>
+                    <CheckBox x:Name="cb_Fever_Chills" Content="Fever/Chills" Height="19"/>
+                    <CheckBox x:Name="cb_Headache" Content="Headache" Height="19"/>
+                    <CheckBox x:Name="cb_No_smell_taste" Content="Loss of taste &#xA;or smell" Height="32"/>
+                    <CheckBox x:Name="cb_Nausea" Content="Nausea" Height="19"/>
+                    <CheckBox x:Name="cb_Breath" Content="Shortness of&#xA;Breath" Height="32"/>
+                    <CheckBox x:Name="cb_Vomiting" Content="Vomiting" Height="19"/>
+                </StackPanel>
+
+                <Button x:Name="btn_ShowCondition" Content="Show Condition" Click="btn_ShowCondition_Click" Height="46" Width="144"/>
+                <StackPanel x:Name="subpanel_conditions" Height="71" Width="145">
+                    <CheckBox x:Name="cb_GoodCondition" Content="Good Condition" Height="22"/>
+                    <CheckBox x:Name="cb_BadCondition" Content="Bad Condition" Height="22"/>
+                    <CheckBox x:Name="cb_CriticalCondition" Content="Critical Condition" Height="22"/>
+                </StackPanel>
+
+                <Button x:Name="btn_ShowVaccination" Content="Show Vaccination" Height="46" Click="btn_ShowVaccination_Click"/>
+                <StackPanel x:Name="subpanel_vaccination" Height="81" Width="143">
+                    <CheckBox x:Name="cb_NotVaccinated" Content="Not Vaccinated" Height="23"/>
+                    <CheckBox x:Name="cb_FullyVaccinated" Content="Fully Vaccinated" Height="23"/>
+                    <CheckBox x:Name="cb_BoosterShot" Content="Fully Vaccinated w/&#xD;&#xA;Booster Shot" Height="33" Checked="cb_BoosterShot_Checked"/>
+                </StackPanel>
+                <Button x:Name="btn_ShowAlert" Content="Show Alert Level" Height="46" Width="144" Click="btn_ShowAlert_Click"/>
+                <StackPanel x:Name="subpanel_alert" Height="65" RenderTransformOrigin="0.5,0.5" Width="145">
+                    <CheckBox x:Name="cb_Level1" Content="Level 1" Height="23"/>
+                    <CheckBox x:Name="cb_Level2" Content="Level 2" Height="23"/>
+                    <CheckBox x:Name="cb_Level3" Content="Level 3" Height="23"/>
+
+                </StackPanel>
+
+
+
+
+
+
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+
+</Window>

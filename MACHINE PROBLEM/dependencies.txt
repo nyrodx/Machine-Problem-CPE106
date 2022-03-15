@@ -1,0 +1,4 @@
+System.Text.Encoding.CodePages
+ExcelDataReader
+ExcelDataReader dataset
+Microsoft.Data.SqlClient
