@@ -1,0 +1,30 @@
+﻿<Window x:Class="V1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:V1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="494" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/mapua-facade-photo-2-newsweek.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Border x:Name="brdr_Login" BorderThickness="1" Margin="123,165,123,164" CornerRadius="20,20,20,20" Background="#FFC89797">
+            <Grid x:Name="grid_LoginTools" Margin="12,0,12,0" Height="118" VerticalAlignment="Center">
+                <TextBlock x:Name="tblock_Login" Margin="24,10,24,84" TextWrapping="Wrap" FontFamily="Segoe UI Black" FontSize="20" FontWeight="Bold" TextAlignment="Center" FontStyle="Normal" Foreground="White"><Run Language="en-ph" Text="LOGIN"/></TextBlock>
+                <PasswordBox x:Name="pb_Password" Margin="24,65,24,35" TextInput="pb_Password_TextInput"/>
+                <TextBox x:Name="tb_Username" TextWrapping="Wrap" Margin="24,42,24,58" TextChanged="tb_Username_TextChanged"/>
+                <Button x:Name="btn_Login" Content="Login" Margin="45,88,45,7" Click="btn_Login_Click" BorderBrush="{x:Null}" Background="#FFFD6464" FontWeight="Bold" Foreground="White">
+                </Button>
+
+            </Grid>
+
+        </Border>
+
+
+    </Grid>
+</Window>
