@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="excel-logo-0.png" />
+    <None Remove="facebook-no-profile-picture-icon-26.jpg" />
+    <None Remove="Images\database_icon.png" />
+    <None Remove="mapua-facade-photo-2-newsweek.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="excel-logo-0.png" />
+    <Resource Include="facebook-no-profile-picture-icon-26.jpg" />
+    <Resource Include="Images\database_icon.png" />
+    <Resource Include="Images\mapua-facade-photo-2-newsweek.jpg" />
+    <Resource Include="mapua-facade-photo-2-newsweek.jpg" />
+  </ItemGroup>
+
+</Project>
